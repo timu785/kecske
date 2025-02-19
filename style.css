@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 10vw;
+    aspect-ratio: 1 / 1;
+}
+main, header, #bal, #jobb, #viz, footer{
+    border: 2px solid rgb(119, 0, 155);
+}
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+main>header{
+    flex: 0 0 100%;
+}
+
+#bal, #jobb{
+    background-color: lightgreen;
+    flex: 0 0 15%;
+}
+
+#viz{
+    background-color: lightblue;
+    flex: 0 0 70%;
+}
+#csonak{
+    background-image: url(kepek/mc_boat.png);
+    height: 50%;
+    aspect-ratio: 1 / 1;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin:auto;
+}
+
+footer{
+    flex: 0 0 100%;
+}
