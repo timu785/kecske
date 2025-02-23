@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 150px;
+    aspect-ratio: 1 / 1;
+}
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+main, header, #bal, #jobb, #viz, footer{
+    border: 2px solid rgb(119, 0, 155);
+}
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 10px;
+    gap: 20px;
+}
+
+header{
+    flex: 0 0 100%;
+}
+header>h1{
+    text-align: center;
+}
+#bal, #jobb{
+    flex: 0 0 15%;
+}
+#viz{
+    background-color: #71ceff;
+    flex: 0 0 calc(100% - 15% - 15% - 20px - 20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.csonak-baloldalt{
+    background-image: url(kepek/csonak.png);
+    background-size: 40%;
+    background-position: left 0 center;
+    background-repeat: no-repeat;
+}
+.csonak-jobboldalt{
+    background-image: url(kepek/csonak.png);
+    background-size: 40%;
+    background-position: right 0 center;
+    background-repeat: no-repeat;
+    text-align: right;
+}
+#csonak{
+    width: 100%;
+    height: 500px;
+}
+
+#csonak>img{
+    margin: 100px;
+}
+footer{
+    flex: 0 0 100%;
+}
+footer p{
+    text-align: center;
+    background-color: #54f2fd;
+}
