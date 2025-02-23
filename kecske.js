@@ -31,6 +31,11 @@ function mozgat(event){
             jobbPartP.appendChild(img);
         }
     }
+    // ellenőrizzük, hogy teljesült-e a játék
+    if (jobbPartP.querySelectorAll("img").length === 3) {
+        alert("Sikeresen átvitted a Kecskét, a Káposztát és a Farkast!");
+        location.reload();
+    }
 }
 
 // a gombok a csónak-nak a class-jait állítják megfelelően, és meghívják a megEsz funkciót
